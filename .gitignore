@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+venv/
+.env
+# Instance folder
+instance/
+# Database
+*.db
+*.sqlite
+*.sqlite3

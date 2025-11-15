@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenges</title>
+</head>
+<body>
+    <h1>Challenges</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for challenge in challenges %}
+            <tr>
+                <td>{{ challenge.title }}</td>
+                <td>{{ challenge.category }}</td>
+                <td>{{ challenge.points }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('main.profile') }}">Back to Profile</a>
+</body>
+</html>
