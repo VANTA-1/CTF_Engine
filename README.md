@@ -174,7 +174,7 @@ It is highly recommended to use a virtual environment to manage project dependen
 
 ### 3. Install Dependencies
 
-Install all required Python packages from the  file:
+Install all required Python packages from the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
@@ -187,7 +187,7 @@ Run the initialization script:
 ```bash
 python scripts/deploy/init_db.py
 ```
-This command will create a  file in your project directory and populate it with a test user and a sample challenge.
+This command will create a `ctf.db` file in your project directory and populate it with a test user and a sample challenge.
 
 ### 5. Run the Application
 
@@ -197,25 +197,25 @@ You can run the application in two ways:
   ```bash
   python run.py
   ```
-  The application will be available at .
+  The application will be available at `http://127.0.0.1:5000`.
 
 - **Production Server (with Gunicorn):**
   ```bash
   gunicorn --workers 4 --bind 0.0.0.0:8000 wsgi:app
   ```
-  The application will be available at .
+  The application will be available at `http://127.0.0.1:8000`.
 
 ## Usage
 
-1.  Open your web browser and navigate to the application's URL (e.g., ).
+1.  Open your web browser and navigate to the application's URL (e.g., `http://127.0.0.1:8000`).
 2.  Click on the "Register" link to create a new account.
 3.  After registering, you will be automatically logged in.
 4.  Navigate to the "Challenges" page to see the available challenges.
 5.  Click the "Logout" link to end your session.
 
 You can also log in with the pre-seeded test account:
-- **Username:** 
-- **Password:** 
+- **Username:** `testuser`
+- **Password:** `password123`
 
 ## Project Structure
 
