@@ -1,3 +1,4 @@
+cat > README.md << 'EOL'
 # CTF Engine
 
 A simple, functional web-based Capture The Flag (CTF) engine built with Flask. This application allows users to register, log in, view challenges, and track their score. It is designed as a foundational project for learning web development and security concepts.
@@ -26,8 +27,8 @@ Follow these steps to get a copy of the project up and running on your local mac
 ### Prerequisites
 
 - Python 3.8+
-- \`pip\` (Python's package installer)
-- \`git\`
+- pip (Python's package installer)
+- git
 
 ### 1. Clone the Repository
 
@@ -55,7 +56,7 @@ It is highly recommended to use a virtual environment to manage project dependen
 
 ### 3. Install Dependencies
 
-Install all required Python packages from the \`requirements.txt\` file:
+Install all required Python packages from the requirements.txt file:
 \`\`\`bash
 pip install -r requirements.txt
 \`\`\`
@@ -68,7 +69,7 @@ Run the initialization script:
 \`\`\`bash
 python scripts/deploy/init_db.py
 \`\`\`
-This command will create a \`ctf.db\` file in your project directory and populate it with a test user and a sample challenge.
+This command will create a ctf.db file in your project directory and populate it with a test user and a sample challenge.
 
 ### 5. Run the Application
 
@@ -78,25 +79,25 @@ You can run the application in two ways:
   \`\`\`bash
   python run.py
   \`\`\`
-  The application will be available at \`http://127.0.0.1:5000\`.
+  The application will be available at http://127.0.0.1:5000.
 
 - **Production Server (with Gunicorn):**
   \`\`\`bash
   gunicorn --workers 4 --bind 0.0.0.0:8000 wsgi:app
   \`\`\`
-  The application will be available at \`http://127.0.0.1:8000\`.
+  The application will be available at http://127.0.0.1:8000.
 
 ## Usage
 
-1.  Open your web browser and navigate to the application's URL (e.g., \`http://127.0.0.1:8000\`).
+1.  Open your web browser and navigate to the application's URL (e.g., http://127.0.0.1:8000).
 2.  Click on the "Register" link to create a new account.
 3.  After registering, you will be automatically logged in.
 4.  Navigate to the "Challenges" page to see the available challenges.
 5.  Click the "Logout" link to end your session.
 
 You can also log in with the pre-seeded test account:
-- **Username:** \`testuser\`
-- **Password:** \`password123\`
+- **Username:** testuser
+- **Password:** password123
 
 ## Project Structure
 
@@ -137,4 +138,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 - Add an admin panel for managing challenges and users.
 - Integrate a more robust database like PostgreSQL.
 - Add Docker support for containerized deployment.
-
+EOL
