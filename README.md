@@ -137,3 +137,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 - Add an admin panel for managing challenges and users.
 - Integrate a more robust database like PostgreSQL.
 - Add Docker support for containerized deployment.
+# Cache refresh
